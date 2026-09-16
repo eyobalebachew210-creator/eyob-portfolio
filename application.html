@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Profile | Eyob Alebachew</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b1f3a;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+
+    nav {
+      background: #102b4e;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 18px;
+    }
+
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 22px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    }
+
+    h2 {
+      color: #0b1f3a;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #e4e9f0;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #183b63;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .profile-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .item {
+      background: #f7f9fc;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eaf1f8;
+      color: #183b63;
+      padding: 6px 11px;
+      border-radius: 20px;
+      margin: 4px 3px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 16px;
+      background: #0b1f3a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #0b1f3a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 650px) {
+      .profile-box {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>University Application Profile</h1>
+  <p>Eyob Alebachew</p>
+  <p>Grade 11 Student | Bori Secondary School, Ethiopia</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="research.html">Research</a>
+  <a href="certificates.html">Certificates</a>
+  <a href="cv.html">CV</a>
+  <a href="application.html">Application</a>
+</nav>
+
+<div class="container">
+
+  <section>
+    <h2>Student Profile</h2>
+
+    <div class="profile-box">
+      <div class="item">
+        <strong>Name</strong>
+        <p>Eyob Alebachew</p>
+      </div>
+
+      <div class="item">
+        <strong>Current Level</strong>
+        <p>Grade 11</p>
+      </div>
+
+      <div class="item">
+        <strong>School</strong>
+        <p>Bori Secondary School</p>
+      </div>
+
+      <div class="item">
+        <strong>Country</strong>
+        <p>Ethiopia</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Academic Interests</h2>
+
+    <span class="tag">Computer Science</span>
+    <span class="tag">Chemistry</span>
+    <span class="tag">Mathematics</span>
+    <span class="tag">Physics</span>
+    <span class="tag">Scientific Research</span>
+  </section>
+
+  <section>
+    <h2>Academic Performance</h2>
+
+    <p>
+      Reported overall average: <strong>86.96</strong>
+    </p>
+
+    <p>
+      Reported school rank: <strong>4</strong>
+    </p>
+  </section>
+
+  <section>
+    <h2>Computer Science Portfolio</h2>
+
+    <ul>
+      <li>Student Performance Analyzer</li>
+      <li>AI Student Study Advisor</li>
+      <li>Android development project</li>
+      <li>Interactive web projects</li>
+      <li>Programming and data-related projects</li>
+    </ul>
+
+    <a class="button" href="projects.html">
+      View Projects
+    </a>
+  </section>
+
+  <section>
+    <h2>Chemistry Portfolio</h2>
+
+    <ul>
+      <li>Chemistry Project</li>
+      <li>Periodic Table & Chemical Data project</li>
+      <li>Interest in chemistry and scientific exploration</li>
+    </ul>
+
+    <a class="button"
+       href="https://eyobalebachew210-creator.github.io/periodic-table-and-chemical-data-/"
+       target="_blank">
+      View Chemistry Project
+    </a>
+  </section>
+
+  <section>
+    <h2>Research Experience</h2>
+
+    <h3>Nuclear Balance Relations (NBT)</h3>
+
+    <p>
+      An independent mathematical and phenomenological research project
+      studying systematic neutron excess in atomic nuclei.
+    </p>
+
+    <p>
+      The project includes mathematical formulation, numerical validation,
+      comparison with the Semi-Empirical Mass Formula, and analysis using
+      nuclear mass data.
+    </p>
+
+    <a class="button"
+       href="research.html">
+      View Research
+    </a>
+  </section>
+
+  <section>
+    <h2>Certificates</h2>
+
+    <ul>
+      <li>Android Development</li>
+      <li>Data Fundamentals</li>
+      <li>Artificial Intelligence</li>
+      <li>Programming</li>
+      <li>Math Mentor</li>
+    </ul>
+
+    <a class="button" href="certificates.html">
+      View Certificates
+    </a>
+  </section>
+
+  <section>
+    <h2>Portfolio Purpose</h2>
+
+    <p>
+      This portfolio organizes my academic interests, projects, research,
+      certificates, and student work in one place for future educational
+      opportunities and university applications.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Eyob Alebachew</p>
+  <p>Grade 11 Student Portfolio</p>
+</footer>
+
+</body>
+</html>
