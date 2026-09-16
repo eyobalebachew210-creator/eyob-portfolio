@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eyob Alebachew | Research</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #172033;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #172033;
+      color: white;
+      text-align: center;
+      padding: 55px 20px;
+    }
+
+    header h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      color: #172033;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 950px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      margin-bottom: 22px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 14px;
+    }
+
+    .formula {
+      background: #eef2f8;
+      padding: 18px;
+      border-radius: 10px;
+      margin: 18px 0;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 17px;
+      background: #172033;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+
+    footer {
+      background: #172033;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 29px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Nuclear Balance Relations</h1>
+  <p>Independent Research by Eyob Alebachew</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="research.html">Research</a>
+</nav>
+
+<main>
+
+  <div class="card">
+    <h2>Research Overview</h2>
+
+    <p>
+      Nuclear Balance Relations (NBT) is an independent research project
+      investigating a compact phenomenological description of systematic
+      neutron excess in atomic nuclei.
+    </p>
+
+    <p>
+      The project is motivated by the systematic behavior of neutron-to-proton
+      balance in nuclei and by the physical considerations represented in the
+      Semi-Empirical Mass Formula (SEMF).
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>NBT-1</h2>
+
+    <p>
+      The first proposed relation describes neutron number as a function
+      of proton number:
+    </p>
+
+    <div class="formula">
+      N = Z + kZ<sup>5/3</sup>
+    </div>
+
+    <p>
+      The coefficient k is determined through numerical fitting to the
+      selected AME2020 nuclear dataset.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>NBT-2</h2>
+
+    <p>
+      A second formulation adds an additional power-law term:
+    </p>
+
+    <div class="formula">
+      N = Z + k<sub>1</sub>Z<sup>5/3</sup>
+      + k<sub>2</sub>Z<sup>2/3</sup>
+    </div>
+
+    <p>
+      NBT-2 was investigated as an extended phenomenological model and
+      compared quantitatively with NBT-1.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Numerical Validation</h2>
+
+    <p>
+      The analysis uses nuclear mass data from AME2020. For each proton
+      number Z, the isotope with the largest experimental binding energy
+      per nucleon was selected, subject to the available dataset.
+    </p>
+
+    <p>
+      The analysis includes goodness-of-fit measures such as RMSE and MAE,
+      together with comparison between the compact NBT relations and the
+      Semi-Empirical Mass Formula.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Scientific Status</h2>
+
+    <p>
+      NBT is presented as a phenomenological description rather than a
+      replacement for established nuclear models. Its purpose is to
+      investigate whether a compact mathematical relation can reproduce
+      an important systematic trend in nuclear composition.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Research Website</h2>
+
+    <p>
+      The complete interactive NBT project is available on the project
+      website.
+    </p>
+
+    <a class="button"
+       href="https://eyobalebachew210-creator.github.io/nbt-nuclear-science/"
+       target="_blank">
+      Explore Full NBT Project
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Eyob Alebachew</p>
+  <p>Independent Student Research</p>
+</footer>
+
+</body>
+</html>
