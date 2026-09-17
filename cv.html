@@ -3,134 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eyob Alebachew | CV</title>
-
+  <title>Eyob Alebachew - CV</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
       font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #172033;
-      line-height: 1.6;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      line-height: 1.5;
+      color: #222;
+      background: #f5f7fa;
     }
 
-    header {
-      background: #0b1f3a;
-      color: white;
-      padding: 35px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-
-    nav {
-      background: #102b4e;
-      padding: 12px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 18px;
-    }
-
-    section {
+    .cv {
       background: white;
-      margin-bottom: 22px;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin-top: 0;
     }
 
     h2 {
-      color: #0b1f3a;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #e4e9f0;
-      padding-bottom: 8px;
-    }
-
-    h3 {
-      margin-top: 15px;
-      color: #183b63;
+      border-bottom: 2px solid #222;
+      padding-bottom: 5px;
+      margin-top: 28px;
+      font-size: 19px;
     }
 
     ul {
       padding-left: 22px;
     }
 
-    .project {
-      margin-bottom: 18px;
+    .item {
+      margin-bottom: 14px;
     }
 
-    .tag {
-      display: inline-block;
-      background: #eaf1f8;
-      color: #183b63;
-      padding: 5px 10px;
-      border-radius: 20px;
-      margin: 4px 3px;
-      font-size: 0.9rem;
+    .item strong {
+      font-size: 16px;
     }
 
-    .button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 16px;
-      background: #0b1f3a;
-      color: white;
+    a {
+      color: #0645ad;
       text-decoration: none;
-      border-radius: 8px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .interests {
       font-weight: bold;
     }
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #0b1f3a;
-      color: white;
-      margin-top: 30px;
+    .back {
+      display: inline-block;
+      margin-bottom: 20px;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
+    @media print {
+      body {
+        background: white;
+        padding: 0;
       }
 
-      nav a {
-        display: inline-block;
-        margin: 5px;
+      .cv {
+        box-shadow: none;
+        padding: 10px;
       }
 
-      section {
-        padding: 20px;
+      .back {
+        display: none;
       }
     }
   </style>
@@ -138,100 +89,81 @@
 
 <body>
 
-<header>
-  <h1>Eyob Alebachew</h1>
-  <p>Grade 11 Student | Computer Science & Chemistry</p>
-  <p>Bori Secondary School, Ethiopia</p>
-</header>
+  <div class="cv">
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="projects.html">Projects</a>
-  <a href="research.html">Research</a>
-  <a href="certificates.html">Certificates</a>
-  <a href="cv.html">CV</a>
-</nav>
+    <a class="back" href="index.html">← Back to Portfolio</a>
 
-<div class="container">
+    <h1>EYOB ALEBACHEW</h1>
+    <p class="subtitle"><strong>Grade 11 Student | Computer Science & Chemistry</strong></p>
 
-  <section>
-    <h2>Profile</h2>
+    <h2>PROFILE</h2>
     <p>
-      I am a Grade 11 student interested in Computer Science, Chemistry,
-      Mathematics, Physics, and scientific research. I enjoy building
-      technology projects and exploring mathematical and scientific ideas.
-    </p>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <h3>Bori Secondary School, Ethiopia</h3>
-    <p><strong>Current level:</strong> Grade 11</p>
-  </section>
-
-  <section>
-    <h2>Selected Projects</h2>
-
-    <div class="project">
-      <h3>NBT — Nuclear Balance Relations</h3>
-      <p>
-        A mathematical and phenomenological research project studying
-        systematic neutron excess in atomic nuclei and comparing the model
-        with experimental nuclear data and the Semi-Empirical Mass Formula.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Chemistry Project</h3>
-      <p>
-        An independent chemistry learning and exploration project developed
-        as part of my scientific portfolio.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Periodic Table & Chemical Data</h3>
-      <p>
-        An interactive web project for exploring elements and chemical data.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Student Performance Analyzer</h3>
-      <p>
-        A web-based project focused on organizing and analyzing student
-        academic performance.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>AI Student Study Advisor</h3>
-      <p>
-        A web project designed to support students with study planning and
-        academic guidance.
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Research</h2>
-    <p>
-      <strong>Nuclear Balance Relations (NBT)</strong>
-    </p>
-    <p>
-      Developed and numerically investigated compact mathematical relations
-      describing systematic neutron excess in nuclei.
+      Grade 11 student interested in Computer Science and Chemistry, with
+      additional interests in Mathematics and Physics. Experienced in
+      developing web-based projects and conducting independent mathematical
+      and physics research. Interested in applying computational and
+      scientific approaches to problem solving.
     </p>
 
-    <a class="button"
-       href="https://eyobalebachew210-creator.github.io/nbt-nuclear-science/"
-       target="_blank">
-      View NBT Research
-    </a>
-  </section>
+    <h2>EDUCATION</h2>
+    <div class="item">
+      <strong>Bori Secondary School, Ethiopia</strong><br>
+      Grade 11 Student
+    </div>
 
-  <section>
-    <h2>Certificates</h2>
+    <h2>ACADEMIC PERFORMANCE</h2>
+    <ul>
+      <li>English — <strong>90</strong></li>
+      <li>Mathematics — <strong>93</strong></li>
+      <li>Physics — <strong>93</strong></li>
+      <li>Chemistry — <strong>95</strong></li>
+      <li>Biology — <strong>97</strong></li>
+      <li>Information Technology — <strong>95</strong></li>
+      <li>Agriculture — <strong>95</strong></li>
+    </ul>
+
+    <h2>RESEARCH</h2>
+
+    <div class="item">
+      <strong>Nuclear Balance Relations (NBT)</strong><br>
+      <em>Independent Physics/Mathematics Research</em>
+      <p>
+        Developed and numerically investigated a phenomenological relation
+        describing systematic neutron excess in atomic nuclei, including
+        comparison with the Semi-Empirical Mass Formula.
+      </p>
+    </div>
+
+    <div class="item">
+      <strong>Mathematics Research</strong><br>
+      <em>Independent Student Research</em>
+      <p>
+        Developed a two-parameter generalization of a classical binomial
+        identity and investigated its higher-power analogues.
+      </p>
+    </div>
+
+    <h2>COMPUTER SCIENCE &amp; TECHNOLOGY PROJECTS</h2>
+
+    <ul>
+      <li>
+        <strong>Chemistry Project</strong> — Web-based chemistry learning project
+      </li>
+      <li>
+        <strong>Periodic Table &amp; Chemical Data</strong> — Interactive chemistry/data web project
+      </li>
+      <li>
+        <strong>Student Performance Analyzer</strong> — Web-based academic-data analysis project
+      </li>
+      <li>
+        <strong>AI Student Study Advisor</strong> — Web-based study-advisor project
+      </li>
+      <li>
+        <strong>Android Application Project</strong> — Mobile software development project
+      </li>
+    </ul>
+
+    <h2>CERTIFICATES</h2>
     <ul>
       <li>Android Development</li>
       <li>Data Fundamentals</li>
@@ -239,39 +171,28 @@
       <li>Programming</li>
       <li>Math Mentor</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Skills & Interests</h2>
-
-    <span class="tag">Computer Science</span>
-    <span class="tag">Programming</span>
-    <span class="tag">Artificial Intelligence</span>
-    <span class="tag">Android Development</span>
-    <span class="tag">Data Fundamentals</span>
-    <span class="tag">Chemistry</span>
-    <span class="tag">Mathematics</span>
-    <span class="tag">Physics</span>
-    <span class="tag">Scientific Research</span>
-    <span class="tag">Web Development</span>
-  </section>
-
-  <section>
-    <h2>Academic Performance</h2>
-    <p>
-      Reported overall average: <strong>86.96</strong>
+    <h2>ACADEMIC INTERESTS</h2>
+    <p class="interests">
+      Computer Science • Chemistry • Mathematics • Physics
     </p>
+
+    <h2>PORTFOLIO</h2>
     <p>
-      Reported school rank: <strong>4</strong>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/eyobalebachew210-creator" target="_blank">
+        eyobalebachew210-creator
+      </a>
     </p>
-  </section>
 
-</div>
+    <p>
+      <strong>Portfolio:</strong>
+      <a href="index.html">
+        Eyob Portfolio
+      </a>
+    </p>
 
-<footer>
-  <p>© 2026 Eyob Alebachew</p>
-  <p>Student Portfolio</p>
-</footer>
+  </div>
 
 </body>
-  </html>
+</html>
